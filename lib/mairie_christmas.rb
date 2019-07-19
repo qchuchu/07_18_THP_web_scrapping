@@ -14,7 +14,7 @@ def get_townhall_email(townhall_url)
       page.xpath(path).text
     rescue NoMethodError => e
       puts "XPath not good // No email"
-      return ni
+      return nil
     end
   rescue Errno::ETIMEDOUT, Errno::ECONNREFUSED, Errno::ENOENT => e
     puts "URL not reached"
@@ -55,4 +55,6 @@ def perform
   array
 end
 
-p perform
+if __FILE__ == $0
+  perform
+end

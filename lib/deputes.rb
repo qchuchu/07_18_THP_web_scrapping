@@ -42,4 +42,6 @@ def perform
   array
 end
 
-p perform
+if __FILE__ == $0
+  perform
+end
