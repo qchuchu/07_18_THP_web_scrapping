@@ -27,4 +27,4 @@ def crypto_scrapper
   end
 end
 
-# crypto_scrapper
+p crypto_scrapper

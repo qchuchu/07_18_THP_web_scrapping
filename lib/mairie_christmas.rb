@@ -54,3 +54,5 @@ def perform
 
   array
 end
+
+p perform
